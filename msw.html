@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="msw.css">
+    <title>Naveen</title>
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><img src="logo.png" style="height: 80px; padding-top: 5px; padding-left: 30px;"></div>
+                <ul>
+                    <li style="list-style: none;display: inline-block;"><a href="#" class="a1" style="color: white;font-size: 23px;font-weight: bold;margin-right: 30px;font-family:stencil; text-decoration: none;">Home</a></li>
+                    <li style="list-style: none;display: inline-block;"><a href="#SERVICES" class="a2" style="color: white;font-size: 23px;font-weight: bold;margin-right: 30px;font-family: stencil; text-decoration: none;">Services</a></li>
+                    <li style="list-style: none;display: inline-block;"><a href="#ABOUT" class="a3" style="color: white;font-size: 23px;font-weight: bold;margin-right: 30px;font-family: stencil; text-decoration: none;">About</a></li>
+                    <li style="list-style: none;display: inline-block;"><a href="#WORKS" class="a4" style="color: white;font-size: 23px;font-weight: bold;margin-right: 30px;font-family: stencil; text-decoration: none;">Works</a></li>
+                    <li style="list-style: none;display: inline-block;"><a href="#CONTACT" class="a5" style="color: white;font-size: 23px;font-weight: bold;margin-right: 30px;font-family: stencil; text-decoration: none;">Contact</a></li>
+                </ul>
+                <div class="container"><button class="menu-btn" onclick="toggleMenu()"><img src="menu.png" style="height: 80px;"></button>
+                    <div class="offcanvas" id="myOffcanvas">
+                        <button class="close-btn" onclick="toggleMenu()">×</button>
+                        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                            <div class="form-content">
+                            <h1 style="text-align: center;">GET IN TOUCH</h1>
+                            <input type="hidden" name="access_key" value="cab28f66-b56c-42a2-8598-25669fa7f4a2">
+                            <div class="name">
+                                <h2>Name</h2>
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="email">
+                                <h2>Email</h2>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="msg">
+                                <h2>Message</h2>
+                                <input type="text" name="message" placeholder="Message">
+                            </div>
+                            <div class="submit">
+                                <button type="submit">Submit</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <script>
+                        function toggleMenu() {
+                            var offcanvas = document.getElementById('myOffcanvas');
+                            if (offcanvas.style.right === '0px') {
+                                offcanvas.style.right = '-350px';
+                            } else {
+                                offcanvas.style.right = '0px';
+                            }
+                        }
+                    </script>
+            </div>
+        </nav>
+</head>
+<body>
+    <div class="hello">
+        <div class="helloi">
+            <div style=" width: 50%;">
+                <p style="margin-top: 20px; margin-left: 50px; font-size: 35px;color: rgb(17, 227, 17);"><b>Hello I'm</b></p>
+                <p style="margin-left: 90px; font-size: 100px; color: white;"><b>Naveen</b></p>
+                <p style="margin-left: 145px; font-size: 100px;color: white;"><b>kumar</b></p><br>
+                <p style="margin-left: 60px; font-size: 45px;color: white;">A &nbsp; passionate&nbsp;&nbsp;<span class="auto-type" style="color: rgb(17,227,17);"></span></p>
+                <br><br><br><br>
+                <a href="#CONTACT"><button class="intb">SAY HELLO</button></a>
+                <a href="./naveen.jpg" download="resume" style="color:#fff ;"><button class="intb" style="margin-left: 100px;">DOWNLOAD CV</button></a>
+            </div>
+            <div style="padding-right: 160px;">
+                <img src="naveen.jpg" alt="photo" style="width: 450px;height: 550px; border-radius: 25%;">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["UI/UX Designer","Web Developer","Software engineer"],
+            typeSpeed: 150,
+            backSpeed: 80,
+            loop:true
+        })
+    </script>
+    <div id="SERVICES"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="services" style="margin-top: 30px;">
+    <h1 style="color: #fff; text-align: center; font-size: 40px; font-family: stencil;"><u><b>Services</b></u></h1>
+    <br>
+    <br>
+    <div class="cards">
+        <div class="card">
+            <div class="icon" style="display: flex; justify-content: space-evenly;">
+                <img src="uiux.png" style="height: 50px;">
+            <h1 style="padding-right: 80px;">UI/UX Design</h1>
+            </div>
+            <p>My UI/UX designs are strategically tailored to meet your business goals and user needs.I specialize in crafting intuitive interfaces that elevate user engagement and satisfaction.</p>
+        </div>
+        <div class="card">
+            <div class="icon" style="display: flex; justify-content: space-evenly;">
+            <img src="webdev.png" style="height: 50px;">
+            <h1 style="padding-right: 50px;">Web Development</h1>
+            </div>
+            <p>I specialize in creating responsive and user-friendly websites.I offer custom web development solutions tailored to your unique needs. Let me build your dream website from concept to launch.</p>
+        </div>
+        <div class="card">
+            <div class="icon" style="display: flex; justify-content: space-evenly;">
+                <img src="appdev.png" style="height: 50px;">
+            <h1 style="padding-right: 50px;">App Development</h1>
+            </div>
+            <p>From concept to deployment, our app development service ensures seamless user experiences and robust functionality.we specialize in app development to bring your unique ideas to life.</p>
+        </div>
+        <div class="card">
+            <div class="icon" style="display: flex; justify-content: space-evenly;">
+                <img src="iot.png" style="height: 60px;">
+            <h1 style="padding-right: 50px;">IOT Projects</h1>
+            </div>
+            <p>I specialize in creating innovative IoT projects that seamlessly integrate smart devices and data analytics for enhanced automation and efficiency.</p>
+        </div>
+    </div>
+    </div>
+    <div id="ABOUT"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="color: #fff; text-align: center; font-size: 40px; font-family: stencil;margin-top: 30px;"><u><b>About me</b></u></h1><br>
+    <p class="text-center" style="color: rgb(17, 227, 17);">I &nbsp;develop &nbsp;system &nbsp;that works</p>
+    <br>
+    <br>
+    <section>
+        <div class="left">
+            <div class="inner sticky">
+                <div class="bg" style="background-image: url('naveen.jpg');"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="inner">
+                <p style="color: white; font-size: 35px;text-align: justify;">I enjoy turning complex problems into simple, beautiful and intuitive designs. My aim is to bring across your message and identity in the most creative way.</p>
+                <br>
+                <br>
+                <hr style="width: 100%;">
+                <br>
+                <br>
+                <div style="display: flex;justify-content: space-between;flex-direction: row;">
+                <div style="display: flex;justify-content: space-between;flex-direction: column;">
+                <p style="color: white; font-size: 30px;">Name: Naveen Kumar K</p>
+                <br>
+                <br>
+                <p style="color: white; font-size: 30px;">Email: naveen@gmail.com</p>
+                <br>
+                <br>
+                <p style="color: white; font-size: 30px;">Education: B.E in EC</p>
+                </div>
+        
+                <div style="display: flex;justify-content: space-between;flex-direction: column;">
+                <p style="color: white; font-size: 30px;">Phone: 6363715644</p>
+                <br>
+                <br>
+                <p style="color: white; font-size: 30px;">Age:20</p>
+                <br>
+                <br>
+                <p style="color: white; font-size: 30px;">Nationality: Indian</p>              
+                </div>
+                </div>
+                <br>
+                <br>
+                <hr style="width: 100%;">
+                <br>
+                <br>
+                <div class="pp" style="display: flex;justify-content: center;">
+                    <ul>
+                        <li style="display: inline-block;font-size: 45px;color: rgb(17,227,17);font-family: stencil;"><u>My</u>&nbsp;<u>Skills</u>&nbsp;&nbsp;</li>
+                        <li style="display: inline-block;font-size: 25px;color: white;font-family: algerian;">growing over times</li>
+                    </ul>
+                </div>
+                <br>
+                <p style="font-size: 30px; font-family: 'Times New Roman', Times, serif; color: white;text-align: justify;margin: 10px;">I am a passionate and dedicated student with a keen interest in web development and IoT projects. My journey has led me to explore various aspects of technology, from creating websites with intuitive navigation and innovative features,  With a solid foundation in HTML, CSS, and JavaScript, I strive to bring creative solutions to life.</p>
+                <br>
+                <br>
+                <div class="skills">
+                    <div class="row1">
+                    <div class="progress-bar-container">
+                        <h2>c</h2>
+                        <div class="progress-bar">
+                            <span class="percentage c"></span>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <h2>c++</h2>
+                        <div class="progress-bar">
+                            <span class="percentage c1"></span>
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div class="row2">
+                    <div class="progress-bar-container">
+                        <h2>html</h2>
+                        <div class="progress-bar">
+                            <span class="percentage c2"></span>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <h2>css</h2>
+                        <div class="progress-bar">
+                            <span class="percentage c3"></span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row3">
+                    <div class="progress-bar-container">
+                        <h2>javascript</h2>
+                        <div class="progress-bar">
+                            <span class="percentage c4"></span>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <h2>python</h2>
+                        <div class="progress-bar">
+                            <span class="percentage c5"></span>
+                        </div>
+                    </div>
+                </div>                
+        </div>
+        <br>
+        <br>
+    </section>
+    <div id="WORKS"></div>
+    <br>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <h1 style="color: white;font-size: 45px;font-family: stencil;text-align: center;"><u>My Recent Works</u></h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="rw">
+        <div class="rwrow">
+            <div class="rwt"><p>Web Design</p></div>
+            <div class="rwd"><p>Software design for a Recipe website</p></div>
+            <div class="rwp"><img src="webdesign1.jpg" style="height: 150px;"></div>
+            <div class="rwb"><button class="plus">+</button></div>
+        </div>
+
+        <div class="rwrow">
+            <div class="rwt"><p>Development</p></div>
+            <div class="rwd"><p>website development for south indian recipies</p></div>
+            <div class="rwp"><img src="webdev1.jpg" style="height: 150px;"></div>
+            <div class="rwb"><button class="plus">+</button></div>
+        </div>
+
+        <div class="rwrow">
+            <div class="rwt">Development</div>
+            <div class="rwd">E-Commerce food ordering website</div>
+            <div class="rwp"><img src="w3.png" style="height: 150px;"></div>
+            <div class="rwb"><button class="plus">+</button></div>
+        </div>
+
+        <div class="rwrow">
+            <div class="rwt">IOT Project</div>
+            <div class="rwd">obstacle avoider robot</div>
+            <div class="rwp"><img src="obs.jpg" style="height: 150px;"></div>
+            <div class="rwb"><button class="plus">+</button></div>
+        </div>
+
+        <div class="rwrow">
+            <div class="rwt">IOT Project</div>
+            <div class="rwd">2WD RC car</div>
+            <div class="rwp"><img src="2wd.jpg" style="height: 150px;width: 250px;"></div>
+            <div class="rwb"><button class="plus">+</button></div>
+        </div>
+    </div>
+    <div id="CONTACT"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="color: white;font-size: 45px;font-family: stencil;text-align: center;"><u>Contact Me</u></h1>
+    <h1 style="color: rgb(17,227,17);font-size: 30px;font-family: 'Times New Roman', Times, serif;text-align: center;">Lets get in touch!</h1>
+    <div class="contcontain">
+        <div class="cont1">
+            <a href="tel:6363715644"><button class="ct"><img src="phone-icon.png" alt="phone" style="width: 50px;border-radius: 50%;vertical-align: middle;"><span style="vertical-align: middle;font-family: 'Times New Roman', Times, serif;">&nbsp;&nbsp;&nbsp;<b>Contact number</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91&nbsp;6363715644</span></button></a>
+            <a href="mailto:naveenkumargowda928@gmail.com"><button class="ct"><img src="email-icon.png" alt="email" style="width: 50px;border-radius: 50%;vertical-align: middle;"><span style="vertical-align: middle;font-family: 'Times New Roman', Times, serif;">&nbsp;&nbsp;&nbsp;<b>Email</b> naveenkumargowda928@gmail.com</span></button></a>
+            <a href="https://wa.me/6363715644"><button class="ct"><img src="whatsapp-icon.jpeg" alt="whatsapp" style="width: 50px;border-radius: 50%;vertical-align: middle;"><span style="vertical-align: middle;font-family: 'Times New Roman', Times, serif;">&nbsp;&nbsp;&nbsp;<b>Whatsapp</b></span></button></a>
+        </div>
+        <div class="cont2">
+            <form class="form1" action="https://api.web3forms.com/submit" method="POST">
+                <div class="form-content1">
+                <h1 style="text-align: center;">GET IN TOUCH</h1>
+                <input type="hidden" name="access_key" value="cab28f66-b56c-42a2-8598-25669fa7f4a2">
+                <div class="cont11">
+                <div class="name1">
+                    <h2>Name</h2>
+                    <input type="text" name="name" placeholder="Your name">
+                </div>
+                <div class="email1">
+                    <h2>Email</h2>
+                    <input type="text" name="email" placeholder="Your email">
+                </div>
+                </div>
+                <div class="cont12">
+                <div class="email1">
+                    <h2>Phone</h2>
+                    <input type="tel" name="phone" placeholder="Your phone">
+                </div>
+                <div class="email1">
+                    <h2>Subject</h2>
+                    <input type="text" name="subject" placeholder="Your subject">
+                </div>
+                </div>
+                <div class="msg1">
+                    <h2>Message</h2>
+                    <input type="text" name="message" placeholder="Start writing Message here">
+                </div>
+                <div class="submit1">
+                    <button type="submit">Submit</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:80%;height:500px;margin-left: 10%;margin-bottom: 100px;"><div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=harinagar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div></div>
+    
+    <footer>
+        <div style="display: flex;justify-content: center;align-items: center;"><img src="logo.png" style="height: 60px;padding-left: 10px;"></div>
+        <div style="font-family: 'Times New Roman', Times, serif;color: white;display: flex;justify-content: center;align-items: center;font-size: x-large;text-align: center;">All rights reserved &copy; 2024</div>
+        <div style="font-family: 'Times New Roman', Times, serif;color: white;">
+            <div>
+                <p style="text-align: center;font-size: large;margin-top: 5px;">Follow me</p>
+            </div>
+            <div style="display: flex;margin-top: 5px;margin-bottom: 5px;padding-right: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100068919063217"><img src="facebook.jpg" alt="facebook" class="icn"></a>
+                <a href="https://www.linkedin.com/in/naveen-kumar-426a4a294/"><img src="linkedin.png" alt="linkedin" class="icn"></a>
+                <a href="https://www.instagram.com/naveengowda928/?hl=en"><img src="instagram.png" alt="instagram" class="icn"></a>
+                <a href="https://twitter.com/naveenk49092617"><img src="twitter.png" alt="twitter" class="icn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
