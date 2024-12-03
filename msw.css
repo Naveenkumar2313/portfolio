@@ -226,6 +226,10 @@ body{
     background-image: linear-gradient(to bottom right, rgb(49, 49, 49) 30%,black );
     transition: all .5s;
     cursor: pointer;
+    opacity: 0;
+	transform: translate(0, -100px);
+	transition: all 1s ease-in-out;
+	transition-delay: 0.2s;
 }
 
 .card:hover{
@@ -238,9 +242,11 @@ section {
 	min-height: 100vh;
 }
 
-.left,
+.left{
+    flex: 30%;
+}
 .right {
-	flex: 1;
+	flex: 40%;
 }
 
 .left .inner {
@@ -257,16 +263,38 @@ section {
 
 .left .inner.sticky {
 	position: sticky;
-    top: 160px;
+    top: 120px;
+    overflow: hidden;
 }
 
 .left .inner.sticky .bg {
-    margin-left: 100px;
-    margin-top: 30px;
-	background-size: 50% 500px;
+    margin-top: 10px;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 1000px;
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+}
+
+.animate-on-scroll {
+	opacity: 0;
+	transform: translate(-300px, 0);
+	transition: all 2s ease-in-out;
+}
+
+.animate-top-down {
+	opacity: 0;
+	transform: translate(0, -300px);
+	transition: all 1s ease-in-out;
+	transition-delay: 0.2s;
+}
+
+.animate {
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .progress-bar-container:not(:last-child) {
@@ -488,6 +516,57 @@ section {
     display: flex;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #eae6e6;
+    color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modalinner{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.modalinnerpic{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.modalinnercontent{
+    text-align: justify;
+    margin-right: 30px;
+}
+
 .form1{
     display: flex;
     flex-direction: column;
@@ -520,7 +599,7 @@ section {
 .name1 input{
     background-color: black;
     color: white;
-    width: 300px;
+    width: 250px;
     height: 70px;
     border: 2px solid rgb(17, 227, 17);
     font-size: 20px;
@@ -529,7 +608,7 @@ section {
 .email1 input{
     background-color: black;
     color: white;
-    width: 300px;
+    width: 250px;
     height: 70px;
     border: 2px solid rgb(17, 227, 17);;
     font-size: 20px;
@@ -538,7 +617,7 @@ section {
 .msg1 input{
     background-color: black;
     color: white;
-    width: 630px;
+    width: 530px;
     height: 200px;
     border: 2px solid rgb(17, 227, 17);
     font-size: 20px;
@@ -566,13 +645,14 @@ section {
     margin-left: 23%;
 }
 
-footer{
+.footer{
     background-color: rgb(49, 49, 49);
     display: flex;
     justify-content: space-between;
     width: 100%;
     right: 0;
-    left: 0;
+    bottom: 0;
+
 }
 
 .icn{
